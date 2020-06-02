@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 export const App = () => {
-  
   const [detractors, setDetract] = useState(0);
   const [neutrals, setNeutral] = useState(0);
   const [promoters, setPromote] = useState(0);

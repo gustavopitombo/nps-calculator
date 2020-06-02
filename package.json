@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run lint && webpack",
+    "lint": "tslint --project tsconfig.json --format codeFrame",
     "start": "webpack-dev-server --open",
-    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,6 +23,7 @@
     "sass-loader": "^8.0.2",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
+    "tslint": "^6.1.2",
     "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
